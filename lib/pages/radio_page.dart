@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/radio_model.dart';
 import '../widgets/radio_row.dart';
+import '../widgets/now_playing.dart';
 
 class RadioPage extends StatefulWidget {
   RadioPage({Key key}) : super(key: key);
@@ -24,6 +25,7 @@ class _RadioPageState extends State<RadioPage> {
         children: [
           RadioRow(radioModel: radio),
           RadioRow(radioModel: radio),
+          NowPlaying(radioName: 'Playing Radio', radioImage: 'http://via.placeholder.com/800'),
         ]
        ),
     );
